@@ -1,3 +1,6 @@
+
+
+
 public class SalesManager {
     protected long[] sales;
 
@@ -15,10 +18,11 @@ public class SalesManager {
         return max;
     }
     public long min() {
-        long min = 0;
-        for (long sale : sales) {
-            if (sale < min) {
-                min = sale;
+        long min = sales[0];
+        for (int i = 1;i < sales.length;i++)
+        {
+            if (sales [i]< min) {
+                min = sales[i];
             }
         }
         return min;

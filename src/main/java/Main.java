@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 
@@ -11,6 +13,8 @@ public class Main {
         SalesManager salesManager = new SalesManager(sales);
         long max = salesManager.max();
         System.out.println("Максимальная сумма продаж в день  " + max);
+        long min = salesManager.min();
+        System.out.println(min);
         long average = salesManager.average();
         System.out.println("Среднее значение продаж " + average);
     }
